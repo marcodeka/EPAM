@@ -21,18 +21,33 @@ namespace LampTimeConverter
         /// <param name="timeString">String representing the time. Format: "hh:mm:ss"</param>
         private void ConvertToLampTime(string timeString)
         {
+            int hours = 0;
+            int minutes = 0;
+            int seconds = 0;
+
             try
             {
                 // Using Split instead of 'TimeSpan.Parse' because of the possibility to insert 24:00:00
                 // which, by specification, needs to produce a different result from 00:00:00
                 string[] result = timeString.Split(':');
 
-                ConvertToLampTime(int.Parse(result[0]), int.Parse(result[1]), int.Parse(result[2]));
+                hours = int.Parse(result[0]);
+                minutes = int.Parse(result[1]);
+                seconds = int.Parse(result[2]);
             }
             catch (Exception)
             {
-                throw new ClockTimeFormatException(timeString);
+                throw new ClockTimeParsingException(timeString);
             }
+
+
+            if (hours < 0 || minutes < 0 || seconds < 0
+                || hours > 24 || minutes > 60 || seconds > 60)
+            {
+                throw new ClockTimeValuesException(timeString);
+            }
+
+            ConvertToLampTime(hours, minutes, seconds);
         }
 
         /// <summary>

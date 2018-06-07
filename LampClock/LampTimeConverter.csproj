@@ -8,7 +8,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>LampClock</RootNamespace>
-    <AssemblyName>LampClock</AssemblyName>
+    <AssemblyName>LampTimeConverter</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Exceptions\ClockTimeFormatException.cs" />
+    <Compile Include="Exceptions\ClockTimeValuesException.cs" />
     <Compile Include="Interfaces\ILampClockObject.cs" />
     <Compile Include="Interfaces\ILampTimeConverter.cs" />
     <Compile Include="Lamp\Lamp.cs" />

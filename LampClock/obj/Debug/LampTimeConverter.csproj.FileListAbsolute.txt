@@ -1,6 +1,0 @@
-C:\Users\annam\Downloads\DotNetBerlinClock-master-2\LampClock\bin\Debug\LampClock.dll
-C:\Users\annam\Downloads\DotNetBerlinClock-master-2\LampClock\bin\Debug\LampClock.pdb
-C:\Users\annam\Downloads\DotNetBerlinClock-master-2\LampClock\obj\Debug\LampTimeConverter.csprojAssemblyReference.cache
-C:\Users\annam\Downloads\DotNetBerlinClock-master-2\LampClock\obj\Debug\LampTimeConverter.csproj.CoreCompileInputs.cache
-C:\Users\annam\Downloads\DotNetBerlinClock-master-2\LampClock\obj\Debug\LampClock.dll
-C:\Users\annam\Downloads\DotNetBerlinClock-master-2\LampClock\obj\Debug\LampClock.pdb
